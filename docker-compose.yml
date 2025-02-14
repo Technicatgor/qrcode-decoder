@@ -1,0 +1,8 @@
+services:
+  qr-decoder:
+    build:
+      context: .
+    restart: unless-stopped
+    ports:
+      - "8083:80"
+    container_name: qr-decoder
